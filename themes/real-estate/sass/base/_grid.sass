@@ -1,0 +1,122 @@
+// MAIN CONTAINER
+$container-width: 80%
+$margin-center: 0px auto 0px auto
+// SUBPAGE CONTAINER
+$sub-container-width: 1280px
+$sub-container-offset: 1024px
+
+
+// THE GRID
+$one-sixth: 16.66666%
+$one-fifth: 20%
+$quarter: 25%
+$two-sixths: 33.33333%
+$one-third: 33.33333%
+$two-fifths: 40%
+$half: 50%
+$three-fifths: 60%
+$three-quarter: 75%
+$four-fifths: 80%
+$five-sixths: 83.33333%
+$full: 100%
+$two-thirds: 66.66667%
+
+// MAKES SPACE FOR ADVERTISING PARTNERS ON CERTAIN PAGES
+// .main-page-section
+//   width: 90%
+//   padding-right: 50px
+//   float: left
+// .partners
+//   width: 10%
+//   float: left
+//   @media screen and (max-width: 768px)
+//     width: 50%
+// main
+//   width: 80%
+//   margin: 140px auto 0px auto
+//   section, .container
+//     width: 80%
+//     float: left
+//     padding-right: 80px
+//     @media screen and (max-width: 768px)
+//       width: 100%
+//       padding-right: 0px
+
+main
+  margin-top: 100px
+// 3-COL MARGIN SCHEME
+.col-3
+  &:nth-child(3n+2)
+    padding: 0 1%
+  &:nth-child(3n+3)
+    padding-left: 2%
+  &:nth-child(3n+1)
+    padding-right: 2%
+// 2-COL MARGIN SCHEME
+.col-2
+  &:nth-child(odd)
+    padding-right: 2%
+  &:nth-child(even)
+    padding-left: 2%
+  @media screen and (max-width: 768px)
+    padding: 0
+    
+.full
+  width: $full
+  float: left
+.container
+  width: $container-width
+  margin: 0 auto
+  +clearfix
+.quarter
+  width: $quarter
+  float: left
+.half
+  width: $half
+  float: left
+  @media screen and (max-width: 768px)
+    width: $full
+.three-quarter
+  width: $three-quarter
+  float: left
+.one-third
+  width: $one-third
+  float: left
+.two-thirds
+  width: $two-thirds
+  float: left
+.one-fifth
+  width: $one-fifth
+  float: left
+.two-fifths
+  width: $two-fifths
+  float: left
+.three-fifths
+  width: $three-fifths
+  float: left
+.four-fifths
+  width: $four-fifths
+  float: left
+
+//RESPONSIVE
+.quarter, .half, .three-quarter, .one-third, .two-thirds, .one-third, .two-thirds, .one-fifth, .two-fifths, .three-fifths, .four-fifths
+  @media screen and (max-width: 768px)
+    width: $full !important
+    padding: 0 !important
+.quarter
+  @media screen and (max-width: 1024px)
+    width: $half 
+
+//row element
+.rw 
+  display: inline-block
+
+
+//
+// @media screen and (max-width: 768px)
+//   $half: 100%
+//   // $quarter: 100%
+//   article
+//     width: $half !important
+  // figure, aside
+  //   width: $quarter !important

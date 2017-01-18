@@ -1,0 +1,262 @@
+.home
+  
+// .home
+//   section
+//     width: 100%
+//     margin: 0px auto
+//     .inner
+//       width: 80%
+//       margin: 0px auto      
+//     &.hero-slider
+//       h2
+//         padding-right: 100px
+//       .button
+//         float: left
+//         width: auto
+//         margin-top: 30px
+//         margin-right: 10px
+        
+//     &.testimonials
+//       background: $white
+//       .bx-wrapper
+//         padding-bottom: 40px
+//       .bx-viewport
+//         background: none
+//       ul
+//         list-style-type: none
+//         li
+//           float: left
+//           background: $whitest
+//           padding: 30px
+//           margin-left: 0
+//           @include vendor-prefix('border-radius','10px')
+//           p
+//             color: $text-dark
+//             text-align: center
+//             font-style: italic
+//             margin-bottom: 2em
+//             min-height: 170px  
+//             a
+//               &.view-article
+//                 display: none          
+//           figure
+//             width: 40%
+//             @include vendor-prefix('border-radius','50%')
+//             img
+//               width: 100%
+//               height: auto
+//           .text
+//             float: left
+//             padding-left: 20px
+//             margin-top: 20px
+//             min-height: 56px
+//             width: 100%
+//             p
+//               text-align: center
+//               font-style: normal
+//               margin-bottom: 0.2em
+//               margin-top: 0.2em
+//               min-height: initial
+//               &.bold
+//                 font-weight: 600
+//     &.what-we-do
+//       .inner 
+//         .item
+//           background: $prime-color1
+//           color: $whitest
+//           padding: 20px
+//           width: 30.3333333%
+//           margin-right: 2%
+//           min-height: 370px
+//           &:nth-child(2)
+//             background: $prime-color1-darkened
+//             margin-left: 1%
+//             margin-right: 1%
+//           &:nth-child(3)
+//             margin-left: 2%
+//             margin-right: 0%
+//           figure
+//             width: 100%
+//             text-align: center
+//             float: none
+//             img
+//               width: auto
+//               margin: 0 auto
+//           h5
+//             color: $whitest
+//             font-size: 1.5em
+//             width: 100%
+//             float: none
+//             margin-top: 1em
+//           p
+//             font-size: 1em
+//             &.title
+//               font-weight: 600
+//               text-transform: uppercase
+//           .button
+//             width: 100%
+//             text-align: center
+//     //Responsive
+//     &.what-we-do
+//       .inner
+//         .item
+//           @media screen and (max-width: 1024px)
+//             width: 100%
+//             margin: 0 !important
+
+
+//     &.booking
+//       width: 100%
+//       background: url('img/booking-bg.jpg') no-repeat
+//       background-size: cover
+//       p, h6
+//         color: $whitest
+//         font-size: 1.35em
+//         font-weight: 400
+//         margin-top: 0em
+//       .col-sm-4
+//         width: 32.43333%
+//       .half
+//         width: 48%
+//         margin-right: 2%
+//       input
+//         border: 1px solid $whitest
+//         color: $whitest
+//         padding: 25px
+//         background: none
+//         outline: 0
+//         @include vendor-prefix('border-radius','8px')
+//         &::-webkit-input-placeholder
+//           color: $whitest
+//           text-transform: uppercase
+//         &:-moz-placeholder
+//           color: $whitest
+//           text-transform: uppercase
+//         &::-moz-placeholder
+//           color: $whitest 
+//           text-transform: uppercase
+//         &:-ms-input-placeholder
+//           color: $whitest          
+//           text-transform: uppercase
+//         &[type=submit]
+//           padding: 15px 21px
+//     &.information
+//       article
+//         width: 48%
+//         margin-right: 2%
+//         padding: 0px
+//         @include vendor-prefix('border-radius','8px')
+//         @include vendor-prefix('box-shadow','2px 2px 8px rgba(0,0,0,0.2)')
+//         &:nth-child(2)
+//           margin-right: 0%
+//           margin-left: 2%
+//         figure
+//           width: 50%
+//           float: left
+//           position: relative
+//         &:nth-child(1)
+//           figure          
+//             &:after
+//               content: url(img/headerbg.png)
+//               position: absolute
+//               bottom: 0px
+//               left: 0px
+//         &:nth-child(2)
+//           figure
+//             &:after
+//               content: url(img/headerbg.png)
+//               position: absolute
+//               top: 0px
+//               right: 0px            
+//         .text
+//           width: 50%
+//           float: left
+//           padding: 20px
+
+//     &.video
+//       width: 100%
+//       height: 770px
+//       position: relative   
+//       .overlay
+//         position: absolute
+//         z-index: 1
+//         float: left
+//         width: 100%
+//         height: 770px         
+//         .background
+//           width: 100%
+//           height: 770px
+//           background: url('img/video-bg.jpg') no-repeat
+//           background-size: cover      
+//           position: absolute
+//         .controls
+//           .watch
+//             width: 80px
+//             height: 80px
+//             margin-left: -40px
+//             background: url('img/play.png') no-repeat
+//             @include vendor-prefix('transtition','all 0.3s ease')
+//             @include position(absolute, 160px null null 50%)
+//             &:hover
+//               background: url('img/play_hover.png') no-repeat
+//               cursor: pointer
+//           .text
+//             width: 100%
+//             text-align: center
+//             @include position(absolute, 260px null null null)
+//             a
+//               text-decoration: underline
+//               color: $whitest
+//               font-size: 1em  
+//               &:hover
+//                 color: #cdcdcd          
+//           h4
+//             color: $whitest
+//             position: absolute
+//             width: 100%
+//             top: 360px
+//             z-index: 2
+//             text-align: center
+//       .videoelement
+//         float: left
+//         height: 770px !important
+//         background: $black !important
+
+//     &.news
+//       figure
+//         float: none
+//       h6
+//         color: $black
+//         margin-top: 1em
+//         font-weight: 400
+//         min-height: 60px
+//       p
+//         color: $black
+//         font-weight: 300
+//         padding: 0px 0 15px 0
+//         min-height: 210px
+//         position: relative
+//         a
+//           width: 100%
+//           display: block
+//           position: absolute
+//           left: 0px
+//           bottom: 0px
+//           text-decoration: underline
+//           &:after
+//             content: url(img/readmore-pink.png)
+//             width: 39px
+//             height: 39px
+//             position: absolute
+//             left: 89px
+//       .bx-wrapper
+//         padding-bottom: 60px
+//       .bx-viewport
+//         li
+//           margin: 0
+          
+
+
+        
+
+

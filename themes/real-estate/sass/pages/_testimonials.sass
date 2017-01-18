@@ -1,0 +1,82 @@
+.testimonials
+  section
+    width: 100%
+    margin: 0px auto
+    .inner
+      width: 80%
+      margin: 0px auto
+      .one-third
+        float: left
+        background: $whitest
+        padding: 30px 30px 0px 30px
+        width: 31%
+        margin: 2%
+        margin-left: 0
+        min-height: 260px
+        background: $grey1
+        @include vendor-prefix('border-radius','10px')
+        h5
+          color: $black
+        p
+          color: $text-dark
+          text-align: center
+          font-style: italic
+          margin-bottom: 1em
+          // min-height: 170px  
+          a
+            &.view-article
+              display: none          
+        figure
+          width: 40%
+          @include vendor-prefix('border-radius','50%')
+          img
+            width: 100%
+            height: auto
+        .text
+          float: left
+          padding-left: 20px
+          margin-top: 20px
+          min-height: 56px
+          width: 100%
+          p
+            text-align: center
+            font-style: normal
+            margin-bottom: 0.2em
+            margin-top: 0.2em
+            min-height: initial
+            
+    &.booking
+      width: 100%
+      background: url('img/booking-bg.jpg') no-repeat
+      background-size: cover
+      p, h6
+        color: $whitest
+        font-size: 1.35em
+        font-weight: 400
+        margin-top: 0em
+      .col-sm-4
+        width: 32.43333%
+      .half
+        width: 48%
+        margin-right: 2%
+      input
+        border: 1px solid $whitest
+        color: $whitest
+        padding: 25px
+        background: none
+        outline: 0
+        @include vendor-prefix('border-radius','8px')
+        &::-webkit-input-placeholder
+          color: $whitest
+          text-transform: uppercase
+        &:-moz-placeholder
+          color: $whitest
+          text-transform: uppercase
+        &::-moz-placeholder
+          color: $whitest 
+          text-transform: uppercase
+        &:-ms-input-placeholder
+          color: $whitest          
+          text-transform: uppercase
+        &[type=submit]
+          padding: 15px 21px            

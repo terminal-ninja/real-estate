@@ -1,0 +1,68 @@
+.faqs
+  .faq-search
+    background: transparentize($prime-color1, 0.1)
+    width: 100%
+    height: 140px
+    color: $whitest
+    h6
+      float: left
+      width: 33%
+      font-size: 1.4em
+      padding-top: 10px
+      color: $whitest
+    .widget_search
+      float: right
+      width: 66%
+      +clearfix
+      select, label
+        display: none
+      input
+        &[type=text]
+          width: 75%
+          float: left
+          padding: 16px 15px
+          border: 1px solid $whitest
+          color: $whitest
+          background: none
+          @include vendor-prefix('border-radius','8px')
+          &::-webkit-input-placeholder
+            color: $whitest
+            text-transform: uppercase
+          &:-moz-placeholder
+            color: $whitest
+            text-transform: uppercase
+          &::-moz-placeholder
+            color: $whitest 
+            text-transform: uppercase
+          &:-ms-input-placeholder
+            color: $whitest          
+            text-transform: uppercase          
+        &[type=submit]
+          width: 23%
+          float: right
+          margin-left: 2%
+          padding: 15px 30px
+          text-decoration: none
+          font-weight: 400
+          font-size: 1em
+          -webkit-appearance: none
+          border: 0
+          background: $prime-color2
+          color: $white
+          border: 2px solid white
+          @include vendor-prefix('border-radius','4px')      
+          @include vendor-prefix('transition','all 0.3s ease')
+          &:hover
+            background: $prime-color1
+  .content
+    h4
+      width: 100%
+      background: $prime-color1
+      color: $whitest
+      text-align: center    
+    .text      
+      padding: 10px
+      h5
+        color: $black
+      p
+        color: $black

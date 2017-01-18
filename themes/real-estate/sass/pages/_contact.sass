@@ -1,0 +1,39 @@
+.contact
+  h5
+    color: $black
+  .content
+    .form
+      input, textarea
+        border: 1px solid $prime-color1
+        color: $grey
+        padding: 25px
+        background: none
+        outline: 0
+        resize: none
+        @include vendor-prefix('border-radius','8px')
+        &::-webkit-input-placeholder
+          color: $grey
+          text-transform: uppercase
+        &:-moz-placeholder
+          color: $grey
+          text-transform: uppercase
+        &::-moz-placeholder
+          color: $grey 
+          text-transform: uppercase
+        &:-ms-input-placeholder
+          color: $grey          
+          text-transform: uppercase
+        &[type=submit]
+          float: right
+          text-align: right
+          background: $prime-color1
+          color: $white
+          border: 2px solid white
+          padding: 12px
+          @include vendor-prefix('border-radius','4px')
+          @include vendor-prefix('transition','all 0.3s ease')
+          a
+            text-decoration: none
+            color: $whitest
+          &:hover
+            background: tint($prime-color1, 30%)

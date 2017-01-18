@@ -1,0 +1,16 @@
+a, a h1, a h2, a h3, a h4, a h4, a h5, a h6, a p
+  outline: 0
+  color: $prime-color2
+  text-decoration: none
+  @include vendor-prefix('transition','all 0.3s ease')
+  &:hover
+    color: tint($prime-color1, 40%)
+  &:active
+    outline: 0
+.inv
+  @include vendor-prefix('transition','all 0.3s ease')
+  &:hover
+    color: $prime-color1 !important
+a
+  outline: none !important
+

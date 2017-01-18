@@ -1,0 +1,152 @@
+// SHARING ICONS
+a .fa
+  color: $prime-color3
+  // background: $prime-color3
+  // padding: 9px
+  // @include vendor-prefix('border-radius','15px')
+  // width: 30px
+  // height: 30px
+  // color: white
+  // &.fa-google-plus
+  //   padding: 8px 5px
+// BUTTONS
+.view-article
+  display: block
+  border-top: 1px solid $greyish
+  padding-top: 18px
+  margin-top: 22px
+  color: $prime-color1
+.btn-container
+  +clearfix
+input, select
+  border: 1px solid $light-grey
+.full-btn
+  width: 132px
+  display: block
+  text-align: center
+  margin: 0 auto
+  float: none !important
+  a
+    display: block
+.button, .wysija-submit, .button div
+  float: left
+  padding: 9px 0px
+  // height: 42px
+  a, button, input, submit, .btn-default
+    padding: 10px 30px
+    text-decoration: none
+    font-weight: 600
+    font-size: 0.8em
+    -webkit-appearance: none
+    border: 0
+    &:hover
+      cursor: pointer
+    &.primary
+      background: $prime-color1
+      color: $white
+      border: 2px solid white
+      @include vendor-prefix('border-radius','4px')
+      @include vendor-prefix('transition','all 0.3s ease')
+      a
+        text-decoration: none
+        color: $whitest
+      &:hover
+        background: tint($prime-color1, 30%)
+    &.sml
+      padding: 6px 31px
+      font-weight: 600
+      font-size: 0.7em
+    &.lrg
+      padding: 16px 24px
+      font-size: 1.2em
+    &.primary-inv
+      background: white !important
+      color: $prime-color1 !important
+      &:hover
+        background: tint($prime-color1, 30%) !important
+        color: white !important
+    &.primary-outline
+      background: transparent
+      color: $prime-color1
+      border: 2px solid $prime-color1
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1
+        color: $whitest
+        box-shadow: 0 0 0 2px $prime-color1 inset
+    &.secondary
+      background: $prime-color2
+      color: $white
+      border: 2px solid white
+      @include vendor-prefix('border-radius','4px')      
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1
+    &.tertiary
+      background: $whitest
+      color: $prime-color1
+      border: 0px
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1-lightened
+        color: $whitest
+    &.rounded
+      @include vendor-prefix('border-radius','5px')
+    &.block
+      display: block
+    &.border
+      border: 1px solid $prime-color1 !important
+
+  .has-icon
+    background: $prime-color1
+    color: $white
+    @include vendor-prefix('transition','all 0.3s ease')
+    padding: 11px
+    border-left: 1px solid $white
+    height: 42px
+    +clearfix
+    &:hover
+      background: $white
+      color: $prime-color1
+      > .icon
+        &.login
+          background-image: url('../images/icons/login-hover.png')
+        &.cart
+          background-image: url('../images/icons/cart-hover.png')
+    .icon
+      width: 19px
+      height: 16px
+      background-repeat: no-repeat
+      background-position: center center
+      display: inline-block
+      @include vendor-prefix('transition','all 0.3s ease')
+      &.login
+        background-image: url('../images/icons/login.png')
+      &.cart
+        background-image: url('../images/icons/cart.png')
+    p
+      display: inline-block
+      -webkit-margin-before: 0em
+      -webkit-margin-after: 0em
+      padding: 0px 6px
+
+// CALDERA
+.form-group
+  input[type=submit]
+    padding: 10px 30px
+    text-decoration: none
+    font-weight: 600
+    font-size: 0.8em
+    -webkit-appearance: none
+    border: 0
+    &.primary
+      background: $prime-color1
+      color: $white
+      border: 2px solid white
+      @include vendor-prefix('border-radius','4px')
+      @include vendor-prefix('transition','all 0.3s ease')
+      a
+        text-decoration: none
+        color: $whitest
+      &:hover
+        background: tint($prime-color1, 30%)

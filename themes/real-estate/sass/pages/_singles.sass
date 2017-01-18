@@ -1,0 +1,39 @@
+.single
+  section
+    width: 100%
+    margin: 0px auto
+  .inner
+    width: 80%
+    margin: 0px auto         
+  .content
+    padding: 60px 0px
+    +clearfix
+    figure
+      float: left
+      width: 50%
+    .text
+      width: 50%
+      float: left
+      padding: 0px 0px 0px 30px
+      p
+        margin-top: 0
+.search
+  section
+    width: 100%
+    margin: 0px auto
+  .inner
+    width: 80%
+    margin: 0px auto     
+    +clearfix
+  article
+    float: none
+    border-bottom: 1px solid $light-grey
+    padding: 20px
+    width: 100%
+    +clearfix
+    &:nth-child(2n+2)
+      background: $grey1
+    img
+      width: 50%
+  .pagination
+    margin-top: 30px

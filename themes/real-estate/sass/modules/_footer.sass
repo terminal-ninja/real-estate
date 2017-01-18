@@ -1,0 +1,137 @@
+footer
+  background: $prime-color1
+  +clearfix
+  // margin-top: 60px
+  // .address
+  //   background: url('img/contact-bg.jpg') no-repeat top
+  //   background-size: cover
+  //   height: 320px
+  //   +clearfix
+  //   h5
+  //     color: $black
+  //     font-weight: 400
+  //     text-align: center
+  //     margin: 1em 0
+  //   .inner
+  //     width: 60% !important
+  //     line-height: 1.2em
+  //     .half
+  //       position: relative
+  //       &:nth-child(2)
+  //         padding-left: 48px
+  //         &:before
+  //           content: url(img/mail.png)
+  //           position: absolute
+  //           top: 0px
+  //           left: 0px
+  //       &:nth-child(3)
+  //         padding-left: 36px
+  //         &:before
+  //           content: url(img/location.png)
+  //           position: absolute
+  //           top: 0px
+  //           left: 0px
+  //       p
+  //         margin: 0px
+  //         a
+  //           margin-top: 20px
+  //           display: block
+  //       .social
+  //         padding-top: 68px
+  //         +clearfix
+  //         a
+  //           float: left
+  //           margin-right: 24px
+  .top
+    background: transparentize($prime-color1, 0.1)
+    color: white
+    h1
+      color: white
+    .inner
+      h1
+        margin: 0
+      h4
+        color: $whitest
+      .caldera-grid .form-group
+        margin-bottom: 0 !important
+      .caldera-grid
+        padding: 30px 0
+      input
+        &[type=email], &[type=text]
+          border: 1px solid $whitest !important
+          color: $whitest !important
+          padding: 36px !important
+          background: none !important
+          @include vendor-prefix('border-radius','8px !important')
+          width: 65%
+          float: left
+          font-size: 35px
+          &::-webkit-input-placeholder
+            color: $whitest
+            // text-transform: uppercase
+          &:-moz-placeholder
+            color: $whitest
+            // text-transform: uppercase
+          &::-moz-placeholder
+            color: $whitest 
+            // text-transform: uppercase
+          &:-ms-input-placeholder
+            color: $whitest          
+            // text-transform: uppercase     
+        &[type=submit]
+          margin-top: 0px
+          padding: 12px 30px
+          width: 32%
+          float: right
+          font-size: 35px
+          font-weight: normal
+          color: $prime-color2
+
+  .middle 
+    background-image: url('img/footer-bg.png')
+    a
+      color: $white
+      display: block
+      font-size: 1em
+    h3
+      color: $black
+    section:nth-child(1)
+      p
+        margin-top: 2em
+
+    .social a
+      float: left
+      padding: 17px 9px
+  .bottom
+    background: transparentize($prime-color1, 0.1)
+    width: 100%
+    color: white
+    h4
+      display: none
+    a, p
+      color: $white
+      display: block
+      font-size: 0.8em
+      margin: 0.8em 0
+    h4
+      color: $white
+    a:hover
+      text-decoration: underline
+  .background
+    background: $prime-color2
+    a, p, h5
+      color: white
+    .copyright
+      width: 100%
+    .fotter-item
+      float: right
+      padding-top: 13px
+//RESPONSIVE
+// footer
+//   @media screen and (max-width: 1024px)
+//     .bottom
+//       h4
+//         display: block
+//     .top
+//       h4
+//         display: none
